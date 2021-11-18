@@ -4,7 +4,17 @@ http.createServer(function (request, response) {
    console.log("CHEGOU console.log(aquiii) -> ", request.method)
    
    if (request.method == 'POST') {
-      console.log(" posssssst ")
+       console.log('POST')
+       var body = ''
+       request.on('data', function(data) {
+         body += data
+         console.log('Partial body: ' + body)
+       })
+//        request.on('end', function() {
+//          console.log('Body: ' + body)
+//          response.writeHead(200, {'Content-Type': 'text/html'})
+//          response.end('post received')
+//        })
    } 
    
    response.writeHead(200, {'Content-Type': 'text/plain'});
