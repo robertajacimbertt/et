@@ -1,7 +1,7 @@
 const http = require('http');
 
 http.createServer(function (request, response) {
-   console.log("CHEGOU console.log(params) -> ", request.params)
+   console.log("CHEGOU console.log(parameters) -> ", request)
    
    response.writeHead(200, {'Content-Type': 'text/plain'});
    response.end("Hello Robs J");
