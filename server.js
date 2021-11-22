@@ -1,7 +1,7 @@
 const http = require('http');
 
 http.createServer(function (request, response) {
-   console.log("CHEGOU console.log(JSON) -> ", request.method)
+   console.log("CHEGOU console.log(JSON res) -> ", request.method)
    
    if (request.method == 'POST') {
        console.log('POST')
