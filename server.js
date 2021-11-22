@@ -20,8 +20,8 @@ http.createServer(function (request, response) {
    //response.writeHead(200, {'Content-Type': 'text/plain'});
    //response.end("Hello World");
    
-    res.setHeader('Content-Type', 'application/json');
-    res.end(JSON.stringify({ number: 1 , name: 'John'}));
+    response.setHeader('Content-Type', 'application/json');
+    response.end(JSON.stringify({ number: 1 , name: 'John'}));
    
 }).listen(8080);
 
