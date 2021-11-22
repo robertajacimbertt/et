@@ -18,7 +18,7 @@ http.createServer(function (request, response) {
    } 
    
    response.writeHead(200, {'Content-Type': 'application/json'});
-   response.end(body);
+   response.end({"oi":"testando"});
    
 }).listen(8080);
 
