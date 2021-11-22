@@ -17,8 +17,8 @@ http.createServer(function (request, response) {
 //        })
    } 
    
-  // response.write(200, {'Content-Type': 'application/json'});
-   response.json({"oi":"testando"});
+   response.setHeader('Content-Type', 'application/json');
+   response.end({"bla": "blas"});
    
 }).listen(8080);
 
