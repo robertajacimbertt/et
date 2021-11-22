@@ -1,7 +1,7 @@
 const http = require('http');
 
 http.createServer(function (request, response) {
-   console.log("CHEGOU console.log(aquiii) -> ", request.method)
+   console.log("CHEGOU console.log(JSON) -> ", request.method)
    
    if (request.method == 'POST') {
        console.log('POST')
@@ -17,7 +17,7 @@ http.createServer(function (request, response) {
 //        })
    } 
    
-   response.writeHead(200, {'Content-Type': 'text/plain'});
+   response.writeHead(200, {'Content-Type': 'application/json'});
    response.end(body);
    
 }).listen(8080);
