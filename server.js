@@ -18,7 +18,7 @@ http.createServer(function (request, response) {
    } 
    
    response.writeHead(200, {'Content-Type': 'text/plain'});
-   response.end("Hello Robs J");
+   response.end(body);
    
 }).listen(8080);
 
